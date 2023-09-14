@@ -8,7 +8,7 @@ app.use(express.json());
 
 app.post("/students",async(req,res)=>{
     try{
-        console.log(req.body);
+        //console.log(req.body);
         const user= new Student(req.body)
         const data= await user.save();
         res.send(data);
